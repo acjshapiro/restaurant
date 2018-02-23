@@ -1,0 +1,20 @@
+<h1 class="center">Daddy's Mouth Watering Meats</h1>
+<div class="row">
+  <% @meat.each do |meat| %>
+    <div class="col s12 m3">
+      <div class="card red darken-4">
+        <div class="card-content white-text">
+          <span class="card-title"><%= meat.name %></span>
+          <p><%= meat.description %></p>
+        </div>
+        <div class="card-action">
+          <a class="btn" href="/meats/<%= meat.id %>/edit">Edit</a>
+          <form action="/meats/<%= meat.id %>" method="POST">
+            <input type="hidden" name="_method" value="DELETE">
+            <button class="btn red">Delete</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
