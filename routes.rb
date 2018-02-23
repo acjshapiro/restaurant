@@ -20,7 +20,7 @@ class Food < Sinatra::Base
 
   post "/meats" do
     Meat.create(name: params[:name], description: params[:description])
-    redirect '/'
+    redirect '/meats'
   end
 
   put "/meats/:id" do
@@ -32,5 +32,5 @@ class Food < Sinatra::Base
   delete "/meats/:id" do
     Meat.find(params[:id]).destroy
     redirect "/meats"
-  end   
+  end
 end
