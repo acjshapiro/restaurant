@@ -13,20 +13,26 @@ h3{
   font-family: 'Bellefair', serif;
   color: #FFC973;
 }
+
 nav{
   font-size: 40px;
 }
 .card{
   border-radius: 20px;
   opacity: .85;
+  margin-bottom: 50px;
 }
 
 .dropdown-content{
   background-color: #FFC973;
+  color: #29160C;
+}
+#dropdown1{
+  color: #29160C;
 }
 
 .droptions{
-  color: black;
+  color: #29160C;
 }
 
 .dropdown-button{
