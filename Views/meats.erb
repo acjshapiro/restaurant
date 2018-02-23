@@ -1,4 +1,4 @@
-<h1 class="center">Daddy's Mouth Watering Meats</h1>
+<h1 id="mouth"class="center">Daddy's Mouth Watering Meats</h1>
 <div class="row">
   <% @meat.each do |meat| %>
     <div class="col s12 m3">
@@ -11,7 +11,7 @@
           <a class="btn" href="/meats/<%= meat.id %>/edit">Edit</a>
           <form action="/meats/<%= meat.id %>" method="POST">
             <input type="hidden" name="_method" value="DELETE">
-            <button class="btn red">Delete</button>
+            <button class="btn red">Kill</button>
           </form>
         </div>
       </div>
